@@ -168,8 +168,8 @@ function showResult() {
   document.getElementById("quiz-screen").style.display = "none";
   document.getElementById("result-screen").style.display = "block";
 
-  const scoreText = `Bravo ${userName}, tu as eu ${score} / ${questions.length} !`;
-  document.getElementById("score-text").textContent = scoreText;
+  const scoreText = `Bravo ${userName},<br>tu as eu ${score} / ${questions.length} !`;
+  document.getElementById("score-text").innerHTML = scoreText;
 
   let feedback = "";
   if (score <= 5) {
