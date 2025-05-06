@@ -9,7 +9,7 @@ body {
   font-family: "Plus Jakarta Sans", sans-serif;
   text-align: center;
   padding: 30px;
-  background-color: rgb(142, 195, 186);
+  background-color: rgb(183, 163, 131);
 
   display: flex;
   justify-content: center;
@@ -60,6 +60,11 @@ button:disabled {
   margin: 20px 0;
 }
 
+#next-btn {
+    background-color: #333;
+    color: #fff;
+}
+
 .option {
   padding: 10px 20px;
   margin: 5px;
@@ -70,15 +75,17 @@ button:disabled {
 }
 
 .option.selected {
-  background-color: #e0e0e0;
+  background-color: #0a68a2;
+  color: #fff;
 }
 
 .option.correct {
-  background-color: #c8f7c5;
+  background-color: #24800d;
+  color: #fff;
 }
 
 .option.incorrect {
-  background-color: #f7c5c5;
+  background-color: #ff5e5e;
 }
 
 footer {
