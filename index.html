@@ -9,7 +9,7 @@
   <div id="app">
     <!-- Écran d'accueil -->
     <div id="start-screen">
-      <h1>Bienvenue au Quiz Biblique</h1>
+      <h1>Le quiz de la semaine</h1>
       <input type="text" id="username" placeholder="Entrez votre prénom">
       <button onclick="startQuiz()">Suivant</button>
     </div>
@@ -19,7 +19,7 @@
       <h2 id="question-title"></h2>
       <div id="options"></div>
       <button id="validate-btn" onclick="validateAnswer()">Valider ma réponse</button>
-      <button id="next-btn" style="display:none;" onclick="nextQuestion()">Question suivante</button>
+      <button id="next-btn" style="display:none;" onclick="nextQuestion()">Suivant</button>
     </div>
 
     <!-- Écran final -->
@@ -30,7 +30,7 @@
     </div>
 
     <footer>
-        © 2025 TonNom. Tous droits réservés.
+        © <span id="year"></span>. Communion de Bry-sur-Marne. <br> La Voie - Communion de maisonnée.
     </footer>
 
   <script src="script.js"></script>

@@ -111,3 +111,5 @@ function restartQuiz() {
   document.getElementById("result-screen").style.display = "none";
   document.getElementById("start-screen").style.display = "block";
 }
+
+document.getElementById("year").textContent = new Date().getFullYear();
