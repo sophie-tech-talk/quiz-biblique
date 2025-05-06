@@ -1,76 +1,106 @@
 @import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 * {
-    font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  box-sizing: border-box;
 }
 
-    body {
-    font-family: "Plus Jakarta Sans", sans-serif;
-    text-align: center;
-    padding: 30px;
-    background-color: rgb(142, 195, 186);
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden;
-    margin: 0;
-  }
-  
-  input, button, .option, .option.correct, .option.incorrect, .option.selected {
-    border-radius: 5px;
-    border: none;
-    transition: box-shadow 0.3s ease; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  text-align: center;
+  padding: 30px;
+  background-color: rgb(142, 195, 186);
 
-  input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+input,
+button,
+.option,
+.option.correct,
+.option.incorrect,
+.option.selected {
+  border-radius: 5px;
+  border: none;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 300px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 10px auto;
+  cursor: pointer;
+  width: 100%;
+  max-width: 300px;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+#options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.option {
+  padding: 10px 20px;
+  margin: 5px;
+  width: 100%;
+  max-width: 300px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.option.selected {
+  background-color: #e0e0e0;
+}
+
+.option.correct {
+  background-color: #c8f7c5;
+}
+
+.option.incorrect {
+  background-color: #f7c5c5;
+}
+
+footer {
+  font-size: 12px;
+  padding: 10px;
+  margin-top: 20px;
+  color: #333;
+}
+
+/* Responsive styles */
+@media (max-width: 480px) {
+  body {
     padding: 10px;
-    font-size: 16px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    font-size: 16px;
-    margin: 10px;
-    cursor: pointer;
   }
 
-  button:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
-  }
-  
-  #options {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px 0;
-  }
-  
+  input,
+  button,
   .option {
-    padding: 10px 20px;
-    margin: 5px;
-    width: 300px;
-    cursor: pointer;
-    background-color: white;
-    transition: background-color 0.3s ease;
+    font-size: 14px;
+    padding: 8px;
   }
-  
-  .option.selected {
-    background-color: #e0e0e0;
-  }
-  
-  .option.correct {
-    background-color: #c8f7c5;
-  }
-  
-  .option.incorrect {
-    background-color: #f7c5c5;
-  }  
 
-  footer {
-    font-size: 12px;
-    padding: 10px;
+  #app {
+    padding: 15px;
   }
+}
