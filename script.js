@@ -168,16 +168,17 @@ function showResult() {
   document.getElementById("quiz-screen").style.display = "none";
   document.getElementById("result-screen").style.display = "block";
 
-  const scoreText = `Bravo ${userName}, vous avez eu ${score} / ${questions.length} !`;
+  const scoreText = `Bravo ${userName}, tu as eu ${score} / ${questions.length} !`;
   document.getElementById("score-text").textContent = scoreText;
 
   let feedback = "";
   if (score <= 5) {
-    feedback = "Courage ! Tu peux relire les textes bibliques et réessayer.";
+    feedback = "Courage ! Tu peux relire l'enseignement et réessayer.";
   } else if (score <= 7) {
     feedback = "Bien joué ! Encore un petit effort pour tout maîtriser.";
   } else {
-    feedback = "Excellent travail ! Tu connais bien la Bible !";
+    feedback =
+      "Excellent travail ! Continues à garder la Parole dans ton coeur.";
   }
 
   document.getElementById("feedback").textContent = feedback;
