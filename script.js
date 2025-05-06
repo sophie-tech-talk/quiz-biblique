@@ -1,15 +1,95 @@
 const questions = [
   {
-    question: "Qui a construit l'arche ?",
-    options: ["Abraham", "Moïse", "Noé", "David"],
+    question:
+      "Quel verset biblique nous encourage à nous décharger de nos soucis sur Dieu ?",
+    options: ["Matthieu 6:34", "Philippiens 4:6", "1 Pierre 5:7", "Jean 14:27"],
     answer: 2,
   },
   {
-    question: "Combien y a-t-il d'évangiles ?",
-    options: ["2", "4", "3", "5"],
+    question:
+      "Laquelle de ces clés ne fait pas partie de 4 clés qui aide à décharger nos soucis sur Dieu ?",
+    options: [
+      "Soyez précis et préoccupé",
+      "Priez dans un endroit calme",
+      "Trouvez un verset précis à revendiquer",
+      "Agissez",
+      "Priez avec croyance",
+    ],
     answer: 1,
   },
-  // ... ajoute 8 autres questions bibliques similaires
+  {
+    question:
+      "Complète ce verset : Ne vous inquiétez de rien ; mais en toute chose faites connaître vos besoins à Dieu...",
+    options: [
+      "... par des supplications, des louanges, avec des actions de grâces.",
+      "... par des actions de grâces et des acclamations.",
+      "... par des supplications précises et avec foi.",
+      "... par des prières et des supplications, avec des actions de grâces.",
+    ],
+    answer: 3,
+  },
+  {
+    question:
+      "Pourquoi est-il important d'être précis et préoccupé lorsque l'on a des soucis ?",
+    options: [
+      "Pour obtenir des réponses plus rapides",
+      "Pour mettre de l’ordre dans nos pensées et éviter l’inquiétude",
+      "Parce que cela montre une foi solide et déterminée",
+      "Pour ne pas déranger Dieu avec des prières vagues",
+    ],
+    answer: 1,
+  },
+  {
+    question: "Combien de promesses à revendiquer y a t il dans la Bible ?",
+    options: ["+ de 600", "+ de 200", "+ de 700", "+ de 900"],
+    answer: 3,
+  },
+  {
+    question: "Que dit Éphesiens 3:20 ?",
+    options: [
+      "et déchargez-vous sur lui de tous vos soucis, car lui-même prend soin de vous",
+      "Tout ce que vous demanderez avec foi par la prière, vous le recevrez.",
+      "Ne vous inquiétez de rien ; mais en toute chose faites connaître vos besoins à Dieu par des prières et des supplications, avec des actions de grâces.",
+      "Or, à celui qui peut faire, par la puissance qui agit en nous, infiniment au delà de tout ce que nous demandons ou pensons,",
+    ],
+    answer: 3,
+  },
+  {
+    question: "Que gagne-t-on à être dans la crainte et l'angoisse ?",
+    options: [
+      "Nous trouvons plus facilement des solutions à nos problèmes.",
+      "Nous devenons automatiquement plus proches de Dieu.",
+      "Nous sommes paralysés et nous n'arrivons plus à agir.",
+    ],
+    answer: 2,
+  },
+  {
+    question: "Comment la prière aide-t-elle à gérer l'inquiétude ?",
+    options: [
+      "Elle transforme l'inquiétude en paix",
+      "Elle supprime les problèmes immédiatement",
+      "Elle nous fait oublier nos soucis",
+      "Elle nous permet de fuir nos responsabilités",
+    ],
+    answer: 0,
+  },
+  {
+    question:
+      "Quel verset confirme que Dieu répond à nos prières si nous croyons en Lui ?",
+    options: [
+      "Jean 3:16",
+      "Hébreux 11:1",
+      "Matthieu 21:22",
+      "Philippiens 4:13",
+    ],
+    answer: 2,
+  },
+  {
+    question:
+      "Qui a surmonté sa crainte et a agit selon la Parole de Dieu quand les Amalécites ont enlevé les femmes et les enfants de ses hommes ?",
+    options: ["Jonas", "David", "Saül", "Élie"],
+    answer: 1,
+  },
 ];
 
 let currentQuestion = 0;
