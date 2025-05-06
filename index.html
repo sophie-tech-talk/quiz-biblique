@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz Biblique</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Écran d'accueil -->
+    <div id="start-screen">
+      <h1>Bienvenue au Quiz Biblique</h1>
+      <input type="text" id="username" placeholder="Entrez votre prénom">
+      <button onclick="startQuiz()">Suivant</button>
+    </div>
+
+    <!-- Écran de question -->
+    <div id="quiz-screen" style="display:none;">
+      <h2 id="question-title"></h2>
+      <div id="options"></div>
+      <button id="validate-btn" onclick="validateAnswer()">Valider ma réponse</button>
+      <button id="next-btn" style="display:none;" onclick="nextQuestion()">Question suivante</button>
+    </div>
+
+    <!-- Écran final -->
+    <div id="result-screen" style="display:none;">
+        <h2 id="score-text"></h2>
+        <p id="feedback"></p>
+        <button onclick="restartQuiz()">Recommencer le quiz</button>
+    </div>
+
+    <footer>
+        © 2025 TonNom. Tous droits réservés.
+    </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
