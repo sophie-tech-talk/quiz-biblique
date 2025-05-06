@@ -1,8 +1,14 @@
-body {
-    font-family: Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+    body {
+    font-family: "Plus Jakarta Sans", sans-serif;
     text-align: center;
     padding: 30px;
-    background-color: #f0f8ff;
+    background-color: rgb(142, 195, 186);
   
     display: flex;
     justify-content: center;
@@ -12,6 +18,13 @@ body {
     margin: 0;
   }
   
+  input, button, .option, .option.correct, .option.incorrect, .option.selected {
+    border-radius: 5px;
+    border: none;
+    transition: box-shadow 0.3s ease; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
   input {
     padding: 10px;
     font-size: 16px;
@@ -37,7 +50,6 @@ body {
   }
   
   .option {
-    border: 1px solid #ccc;
     padding: 10px 20px;
     margin: 5px;
     width: 300px;
@@ -59,7 +71,6 @@ body {
   }  
 
   footer {
-    font-size: 14px;
+    font-size: 12px;
     padding: 10px;
-    color: #555;
   }
