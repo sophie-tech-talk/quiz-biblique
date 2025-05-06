@@ -45,6 +45,7 @@ button {
   cursor: pointer;
   width: 100%;
   max-width: 300px;
+  text-color: #000;
 }
 
 button:disabled {
